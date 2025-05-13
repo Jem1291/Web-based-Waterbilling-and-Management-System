@@ -333,7 +333,7 @@ class User_Model extends CI_Model{
             'status'=>$this->input->post('status'),
             'tag'=>$this->input->post('tag'),
             'Brgy_ID' => '1',
-            'Purok_ID' => $this->input->post('mpurok'),
+            'Purok_ID' => $this->input->post('purok'),
             'tblconsumer_ID' => $id
         );
         $this->db->insert('tblmeter', $meter_data);
